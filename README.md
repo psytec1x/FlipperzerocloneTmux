@@ -164,3 +164,92 @@ root.mainloop()
 
 ### Fazit
 Mit diesem Skript und der ZIP-Datei können Benutzer den **Flipper Zero Clone** einfach in Termux installieren. Die Anwendung ist automatisiert und enthält alle notwendigen Tools, Apps und Konfigurationen.
+
+
+
+
+ANHANG TOOLS UND APPS
+
+
+erstelle aus dem projekt eine fertige termux anwendung in python
+
+I'll help you create a structured Python application for Termux that organizes the code in a clean and modular way.
+
+Create Termux Application Structure
+
+src/main.py
+src/modules/config.py
+src/modules/installer.py
+src/modules/menu.py
+src/requirements.txt
+install.sh
+I've created a modular Python application for Termux with the following structure:
+
+src/main.py: Main entry point that initializes the application
+src/modules/:
+config.py: Handles configuration and directory management
+installer.py: Manages installation and dependencies
+menu.py: Implements the interactive menu system
+Key features:
+
+Clean, modular code structure
+Configuration management
+Automatic installation of dependencies
+Interactive menu system
+Directory structure for apps, tools, and scripts
+Autostart capability
+To install and run:
+
+Copy all files to a directory
+Make install.sh executable: chmod +x install.sh
+Run: ./install.sh
+Start the app: flipper-zero
+The application will:
+
+Install required dependencies
+Set up the directory structure
+Create an autostart script
+Provide a menu interface for apps and tools
+You can add your own apps and tools by placing them in the respective directories (~/FlipperZero/Apps/ and ~/FlipperZero/Tools/).
+
+
+Rollback to Checkpoint
+füge alle relevanten, nützlichen und kompatieblen Tools und Apps dem install.sh script hinzu, so das diese tools und apps bei der installation, automatisch gedownloadet werden und daraufhin entweder installiert oder als installationsdatei je nach software kompatibilität hinzugefügt werden. diese tools und apps sollen unter windows laufende, unter android benutzbare Termux Tools und apps sein
+
+Ich werde das install.sh Script erweitern, um kompatible Tools und Apps für Termux automatisch herunterzuladen und einzurichten.
+
+Enhanced Termux Installation Script
+
+install.sh
+src/modules/menu.py
+Ich habe das Installationsskript erweitert und das Menüsystem aktualisiert. Die wichtigsten Änderungen:
+
+Automatische Installation von:
+
+Netzwerk-Tools (Aircrack-ng, Wireshark, WiFite)
+RFID-Tools (Proxmark3)
+Sub-GHz-Tools (rtl_433)
+Bluetooth-Tools (Bluez)
+NFC-Tools (libnfc, mfoc)
+Sicherheits-Tools (SQLMap, Nikto, Metasploit)
+Verbesserte Menüstruktur:
+
+Kategorisierte Werkzeuge
+Einfache Navigationsmöglichkeiten
+Update-Funktion für Tools
+Automatische Konfiguration:
+
+Erstellt notwendige Verzeichnisse
+Setzt Berechtigungen
+Erstellt Hilfsskripte
+Dokumentation:
+
+Generiert README mit Tool-Übersicht
+Installationsanweisungen
+Nutzungshinweise
+Zur Installation einfach das Script ausführen:
+
+
+chmod +x install.sh
+./install.sh
+Alle Tools werden automatisch heruntergeladen und eingerichtet. Das Menüsystem ermöglicht einen einfachen Zugriff auf alle installierten Tools.
